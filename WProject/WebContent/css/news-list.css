@@ -15,6 +15,21 @@
 	height:42px;
 	background:url(../images/list-left-title.png) no-repeat;
 }
+
+.list-container .list-left-titile .more-tag{
+	height:16px;
+	line-height:16px;
+	width:auto;
+	float:right;
+	margin-right:15px;
+	display:block;
+	color:#fff;
+	font-weight:bold;
+	margin-top:13px;
+	text-decoration:none;
+}
+
+
 .list-container .list-left-body{
 	width:323px;
 	border:2px #f76666 solid;

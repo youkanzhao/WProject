@@ -108,6 +108,7 @@ body{
 	width:1024px;
 	margin:0 auto;
 	font-size:14px;
+	position:relative;
 }
 
 .m-container .footer-p{
