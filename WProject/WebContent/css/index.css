@@ -1,1 +1,149 @@
 @CHARSET "UTF-8";
+.index-container{
+	width:1024px;
+	height:1000px;
+	background:url(../images/index-bg.png) no-repeat;
+	margin:0 auto;
+	font-size:12px;
+}
+
+.c-container{
+	width:721px;
+	margin:0 auto;
+	overflow:visible;
+	padding-top:253px;
+}
+
+#cygp-box{
+	width:331px;
+	height:183px;
+}
+
+#cygp-box .cygp-title{
+	width:100%;
+	height:32px;
+	background:url(../images/cygp-header.png) no-repeat;
+}
+
+#cygp-box .cygp-body{
+	width:329px;
+	height:183px;
+	border:1px #f64e4f solid;
+	border-top:none;
+}
+
+#cygp-box .cygp-body .tabs-box{
+	height:35px;
+	width:100%;
+	border-bottom:1px #f64e4f solid;
+}
+
+#cygp-box .cygp-body .tabs-box ul{
+	height:100%;
+}
+
+#cygp-box .cygp-body .tabs-box ul li{
+	list-style:none;
+	width:77px;
+	float:left;
+	height:33px;
+	margin:0px 16px;
+	opacity:0.3;
+}
+
+#cygp-box .cygp-body .tabs-box .sel-li{
+	border-bottom:2px #f64e4f solid;
+	opacity:1;
+}
+
+#cygp-box .cygp-body .tabs-box .tab-icon{
+	width:24px;
+	height:24px;
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+	cursor:pointer;
+}
+
+#cygp-box .cygp-body .tabs-box .tab-txt{
+	height:24px;
+	line-height:24px;
+	float:left;
+	margin-top:5px;
+	margin-left:8px;
+	color:#cc1508;
+	font-weight:bold;
+}
+
+#cygp-box .cygp-body .tabs-box .icon-gonglu{
+	background:url(../images/cygp-gonglu.png) no-repeat;
+}
+
+#cygp-box .cygp-body .tabs-box .icon-hangkong{
+	background:url(../images/cygp-hangkong.png) no-repeat;
+}
+
+#cygp-box .cygp-body .tabs-box .icon-huoche{
+	background:url(../images/cygp-huoche.png) no-repeat;
+}
+
+#cygp-box .cygp-label{
+	float:left;
+	width:80px;
+	height:21px;
+	line-height:21px;
+	text-align:right;
+	font-weight:bold;
+	color:#cc1508;
+}
+
+#cygp-box #gonglu{
+	margin-top:19px;
+	display:none;
+}
+
+#cygp-box #hangkong{
+	margin-top:19px;
+	display:none;
+}
+
+#cygp-box .cygp-input{
+	width:169px;
+	height:21px;
+	line-height:21px;
+	border:1px #999999 solid;
+	margin-left:21px;
+	float:left;
+}
+
+#cygp-box .cygp-bnt{
+	width:60px;
+	height:23px;
+	line-height:23px;
+	float:right;
+	margin-right:58px;
+	background:#e44343;
+	color:#fff;
+	font-weight:bold;
+	padding:0px;
+	border:none;
+	margin-top:15px;
+}
+
+#cygp-box #gonglu dl{
+	width:100%;
+	height:35px;
+	clear:both;
+	margin:0 auto;
+}
+
+#cygp-box dl dd{
+	line-height:35px;
+	float:left;
+	margin-left:10px;
+}
+
+#cygp-box dl dd a{
+	text-decoration:none;
+	color:#989898;
+}
