@@ -158,6 +158,7 @@
 	display:inline;
 	text-align:center;
 	font-weight:bold;
+	cursor:pointer;
 }
 
 .list-container .list-right-body .page-info .search-icon{
@@ -169,6 +170,7 @@
 	display:inline;
 	margin-top:3px;
 }
+
 .list-container .list-right-body .page-info .page-txt{
 	float:right;
 	margin-right:3px;
