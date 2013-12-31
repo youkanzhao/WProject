@@ -16,6 +16,17 @@
 	background:url(../images/list-left-title.png) no-repeat;
 }
 
+.list-container .list-left-titile .left-title{
+	height:42px;
+	line-height:42px;
+	float:left;
+	margin-left:62px;
+	display:inline;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+}
+
 .list-container .list-left-titile .more-tag{
 	height:16px;
 	line-height:16px;
@@ -85,6 +96,7 @@
 	color:#cf2518;
 	text-align:left;
 	margin-left:5px;
+	cursor:pointer;
 }
 
 .list-container .list-left-body .title-cell{
@@ -96,6 +108,7 @@
 	color:#636363;
 	margin-left:5px;
 	margin-top:4px;
+	cursor:pointer;
 }
 
 .list-container .list-left-body .left-bnt{

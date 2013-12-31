@@ -4,10 +4,66 @@
 <meta charset="UTF-8">
 <title>专题首页</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css" />
+<link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 <body>
-	<div class="main">
-		<div class="header-b"></div>
+	<div class="index-container">
+		<div class="c-container">
+        	<div id="cygp-box">
+            	<div class="cygp-title"></div>
+                <div class="cygp-body">
+                	<div class="tabs-box">
+                    	<ul>
+                        	<li class="sel-li">
+                            	<div class="tab-icon icon-gonglu"></div>
+                                <div class="tab-txt">公路</div>
+                            </li>
+                            <li>
+                            	<div class="tab-icon icon-hangkong"></div>
+                                <div class="tab-txt">航空</div>
+                            </li>
+                            <li>
+                            	<div class="tab-icon icon-huoche"></div>
+                                <div class="tab-txt">铁路</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="gonglu">
+                    	<div class="cygp-label">发站</div>
+                        <input class="cygp-input" name="fazhan"/>
+                        <div class="clearfix" style="height:13px;"></div>
+                        <div class="cygp-label">到站</div>
+                        <input type="text" class="cygp-input" name="daozhan"/>
+                        <input type="button" class="cygp-bnt" value="查询"/>
+                        <dl>
+                        	<dd><a href="">在线订票</a></dd>
+                            <dd><a href="">全省在线订票</a></dd>
+                            <dd><a href="">省际路线</a></dd>
+                            <dd><a href="">港澳路线</a></dd>
+                            <dd><a href="">省内路线</a></dd>
+                        </dl>
+                    </div>
+                    <div id="hangkong">
+                    	<div class="cygp-label">出发城市</div>
+                        <input class="cygp-input" name="chufachengshi"/>
+                        <div class="clearfix" style="height:13px;"></div>
+                        <div class="cygp-label">到达城市</div>
+                        <input type="text" class="cygp-input" name="daodachengshi"/>
+                        <div class="clearfix" style="height:13px;"></div>
+                        <div class="cygp-label">出发日期</div>
+                        <input type="text" class="cygp-input" name="chufariqi" style="width:108px;"/>
+                        <input type="button" class="cygp-bnt" value="查询" style="float:left;margin-top:0px;"/>
+                        <dl>
+                        	<dd><a href="">客票验真</a></dd>
+                            <dd><a href="">网上值机</a></dd>
+                            <dd><a href="">候机楼</a></dd>
+                            <dd><a href="">机场服务设施</a></dd>
+                            <dd><a href="">航旅指南</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
 	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="./js/index.js"></script>
