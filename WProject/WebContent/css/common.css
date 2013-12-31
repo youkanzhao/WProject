@@ -84,10 +84,11 @@ body{
 }
 
 .header-a{
-	width:100%;
+	width:1423px;
 	height:373px;
 	background:url(../images/header-a.png) no-repeat;
 	overflow:hidden;
+	margin:0 auto;
 }
 
 .nav-a{
