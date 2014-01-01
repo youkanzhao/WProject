@@ -1,6 +1,9 @@
 @CHARSET "UTF-8";
+body{
+	background:url(../images/body-bg.png) repeat-x;
+}
 .detail-container{
-	width:974px;
+	width:950px;
 	height:auto;
 	border:1px #f76f6f solid;
 	border-radius:3px;

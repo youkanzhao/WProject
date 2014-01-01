@@ -8,33 +8,50 @@
 </head>
 <body>
 	<div class="main index-container">
+    	<div class="tq-box">
+            <dl>
+                <dd>深圳 <a href="#">切换城市</a></dd>
+                <dd>2014年01月31日</dd>
+                <dd>星期五</dd>
+            </dl>
+            <ul>
+                <li>多云小雨</li>
+                <li>16°C ~ 28°C</li>
+            </ul>
+            <img src="images/tq-icon.png"/>
+        </div>
 		<div class="c-container">
         	<div id="cygp-box">
             	<div class="cygp-title"></div>
                 <div class="cygp-body">
                 	<div class="tabs-box">
                     	<ul>
-                        	<li class="sel-li">
+                        	<li class="sel-li" data="gonglu">
                             	<div class="tab-icon icon-gonglu"></div>
                                 <div class="tab-txt">公路</div>
                             </li>
-                            <li>
+                            <li data="hangkong">
                             	<div class="tab-icon icon-hangkong"></div>
                                 <div class="tab-txt">航空</div>
                             </li>
-                            <li>
+                            <li data="tielu">
                             	<div class="tab-icon icon-huoche"></div>
                                 <div class="tab-txt">铁路</div>
                             </li>
+                            <li data="gangkou">
+                            	<div class="tab-icon icon-gangkou"></div>
+                                <div class="tab-txt">港口</div>
+                            </li>
                         </ul>
                     </div>
-                    <div id="gonglu">
+                    <div class="cygp-box-content" id="gonglu" style="display:block;">
                     	<div class="cygp-label">发站</div>
                         <input class="cygp-input" name="fazhan"/>
                         <div class="clearfix" style="height:13px;"></div>
                         <div class="cygp-label">到站</div>
                         <input type="text" class="cygp-input" name="daozhan"/>
                         <input type="button" class="cygp-bnt" value="查询"/>
+                        <div class="clearfix" style="height:8px;"></div>
                         <dl>
                         	<dd><a href="">在线订票</a></dd>
                             <dd><a href="">全省在线订票</a></dd>
@@ -43,7 +60,7 @@
                             <dd><a href="">省内路线</a></dd>
                         </dl>
                     </div>
-                    <div id="hangkong">
+                    <div id="hangkong" class="cygp-box-content">
                     	<div class="cygp-label">出发城市</div>
                         <input class="cygp-input" name="chufachengshi"/>
                         <div class="clearfix" style="height:13px;"></div>
@@ -53,6 +70,7 @@
                         <div class="cygp-label">出发日期</div>
                         <input type="text" class="cygp-input" name="chufariqi" style="width:108px;"/>
                         <input type="button" class="cygp-bnt" value="查询" style="float:left;margin-top:0px;"/>
+                        <div class="clearfix" style="height:8px;"></div>
                         <dl>
                         	<dd><a href="">客票验真</a></dd>
                             <dd><a href="">网上值机</a></dd>
@@ -61,6 +79,8 @@
                             <dd><a href="">航旅指南</a></dd>
                         </dl>
                     </div>
+                    <div id="tielu" class="cygp-box-content">铁路内容</div>
+                    <div id="gangkou" class="cygp-box-content">铁路内容</div>
                 </div>
             </div>
             <div id="gslk-box">
@@ -68,11 +88,543 @@
                 	<input type="text" class="search-input"/>
                     <input type="button" class="search-bnt"/>
                 </div>
-                <div class="gslk-body"></div>
+                <div class="gslk-body">
+                	<div class="body-left">
+                    	<dl>
+                        	<dd class="b-t b-l b-b">全省<div class="arrow"></div></dd>
+                            <dd class="b-b b-l dd-sel">珠三角<div class="arrow"></div></dd>
+                            <dd class="b-b b-l">粤东<div class="arrow"></div></dd>
+                            <dd class="b-b b-l">粤西<div class="arrow"></div></dd>
+                            <dd class="b-b b-l">粤北<div class="arrow"></div></dd>
+                        </dl>
+                    </div>
+                    <div class="body-right">
+                    	<dl>
+                        	<dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">广深高速</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">北环高速</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">广深高速</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">北环高速</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">广深高速</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">北环高速</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            
+                        </dl>
+                        <div class="clearfix"></div>
+                        <ul>
+                        	<li class="gsgg">
+                            	<div class="title">高速公共</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                            <li class="cybl">
+                            	<div class="title">车友爆料</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="cyrl">
+            	<div class="cyrl-title">
+                	<div class="denglong"></div>
+                </div>
+                <table border="1" bordercolor="#ff9393">
+                	<tr>
+                    	<td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td class="td-sel">
+                        	<div class="txt-line red">22</div>
+                            <div class="txt-line red">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        
+                        <td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td class="td-sel">
+                        	<div class="txt-line red">22</div>
+                            <div class="txt-line red">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        
+                        <td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td class="td-sel">
+                        	<div class="txt-line red">22</div>
+                            <div class="txt-line red">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">20</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">21</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                        <td>
+                        	<div class="txt-line">22</div>
+                            <div class="txt-line">大寒</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="dljtzs">
+            	<div class="dljtzs-title"></div>
+                <div class="dljtzs-body">
+                	<dl>
+                    	<dd>2014年01月31日</dd>
+                        <dd>星期三  上午：10时45分</dd>
+                        <dd>全路网交通指数：1.3 基本畅通</dd>
+                        <dd>平均速度：34.5公里/小时</dd>
+                        <dd class="detail">详细信息</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="index-left">
+            	<div class="list-left" id="hbdt">
+                    <div class="list-left-titile">
+                        <div class="left-title">航班动态</div>
+                        <a href="#" class="more-tag">MORE >></a>
+                    </div>
+                    <div class="list-left-body">
+                        <dl class="index-left-dl dl-title">
+                        	<dd>航班号</dd>
+                            <dd>抵港时间</dd>
+                            <dd>状态</dd>
+                        </dl>
+                        <div class="dl-spliter"></div>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        
+                    </div>
+                </div>
+                
+                <div class="list-left" id="hcdt" style="margin-top:7px;">
+                    <div class="list-left-titile">
+                        <div class="left-title">火车动态</div>
+                        <a href="#" class="more-tag">MORE >></a>
+                    </div>
+                    <div class="list-left-body">
+                        <dl class="index-left-dl dl-title">
+                        	<dd>车次</dd>
+                            <dd>始发地</dd>
+                            <dd>到站时间</dd>
+                            <dd>状态</dd>
+                        </dl>
+                        <div class="dl-spliter"></div>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                        <dl class="index-left-dl dl-bg">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                       	<dl class="index-left-dl">
+                        	<dd>A2051</dd>
+                             <dd>上海</dd>
+                            <dd>11:20</dd>
+                            <dd>正点</dd>
+                        </dl>
+                    </div>
+                </div>
+            
+            	<div class="list-left"  style="margin-top:7px;">
+                	<div class="list-left-titile">
+                    	<div class="left-title">出行手册</div>
+                		<a href="#" class="more-tag">MORE >></a>
+                	</div>
+                    <div class="list-left-body">
+                    	<dl>
+                    		<dd class="border-bottom">
+                    			<div class="list-icon icon-1"></div>
+                    			<div class="title-a">火车出行手册</div>
+                    			<div class="title-cell">火车常识</div>
+                    			<div class="title-cell" style="margin-left:43px;">安全手册</div>
+                    			<div class="title-cell" style="margin-left:43px;">订票攻略</div>
+                    			<div class="clearfix"></div>
+                    		</dd>
+                    		<dd class="border-bottom">
+                    			<div class="list-icon icon-2"></div>
+                    			<div class="title-a">飞机出行手册</div>
+                    			<div class="title-cell">乘车常识</div>
+                    			<div class="title-cell" style="margin-left:43px;">安全手册</div>
+                    			<div class="title-cell" style="margin-left:43px;">订票攻略</div>
+                    			<div class="clearfix"></div>
+                    		</dd>
+                    		<dd class="border-bottom">
+                    			<div class="list-icon icon-3"></div>
+                    			<div class="title-a">汽车出行手册</div>
+                    			<div class="title-cell">乘机须知</div>
+                    			<div class="title-cell" style="margin-left:43px;">安全手册</div>
+                    			<div class="title-cell" style="margin-left:43px;">订票攻略</div>
+                    			<div class="clearfix"></div>
+                    		</dd>
+                    		<dd class="border-bottom">
+                    			<div class="list-icon icon-4"></div>
+                    			<div class="title-a" style="margin-top:27px;">轮船出行手册</div>
+                    			<div class="clearfix"></div>
+                    		</dd>
+                    		<dd class="border-bottom">
+                    			<div class="list-icon icon-5"></div>
+                    			<div class="title-a" style="margin-top:27px;">自驾出行手册</div>
+                    			<div class="clearfix"></div>
+                    		</dd>
+                    	</dl>
+                    </div>
+                    
+                    <div class="list-left" style="margin-top:7px;">
+	                	<div class="list-left-titile">
+                        	<div class="left-title">专题服务</div>
+	                		<a href="#" class="more-tag">MORE >></a>
+	                	</div>
+	                    <div class="list-left-body">
+	                    	<a href="javascript:void(0);" class="left-bnt bnt-1"></a>
+	                    	<a href="javascript:void(0);" class="left-bnt bnt-2"></a>
+	                    	<a href="javascript:void(0);" class="left-bnt bnt-3"></a>
+	                    	<div class="clearfix"></div>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+            <div class="index-right">
+            	<div id="tongzhi">关于地铁7号线田贝站工程施工期间调整交通组织的通告</div>
+                <div id="index-news">
+                	<div class="news-left">
+                    	<div class="news-left-title">
+                        	<span>春运新闻</span>
+                            <a href="">MORE >></a>
+                        </div>
+                        <div class="news-left-body">
+                        	<div class="news-content">
+                            	<img src="images/news-img.png" class="f-l" style="margin:0px 5px;"/>
+                                	<em>广铁微博推出“超强购票宝典...</em> 
+                                    深圳特区报讯（记者 徐兴东）为引导 旅客购买春运火车票，广铁集团继推出 “超强购票日历”后， 深圳特区报讯（记者 徐兴东）为引导 旅客购买春运火车票，广铁集团继推出 “超强购票日历”后 深圳特区报讯（记者 徐兴东）为引导 旅客购买春运火车票，广铁集团继推出 “超强购票日历”后
+                                
+                            </div>
+                            <div class="clearfix"></div>
+                            <dl>
+                            	<dd>国内燃油附加费涨10元</dd>
+                                <dd style="text-align:right;">[2013-03-05]</dd>
+                            </dl>
+                            <dl>
+                            	<dd>国内燃油附加费涨10元</dd>
+                                <dd style="text-align:right;">[2013-03-05]</dd>
+                            </dl>
+                            <dl>
+                            	<dd>国内燃油附加费涨10元</dd>
+                                <dd style="text-align:right;">[2013-03-05]</dd>
+                            </dl>
+                            <dl>
+                            	<dd>国内燃油附加费涨10元</dd>
+                                <dd style="text-align:right;">[2013-03-05]</dd>
+                            </dl>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="news-right">
+                    	<div id="jrcxts">
+                        	<dl>
+                            	<dd class="jrcxts-title">今日出行提示</dd>
+                                <dd>3月5日出行提示</dd>
+                                <dd>3月6日出行提示</dd>
+                                <dd>3月7日出行提示</dd>
+                                <dd class="jrcxts-more">MORE >></dd>
+                            </dl>
+                        </div>
+                        <div id="glqxyb">
+                        	<dl>
+                            	<dd class="jrcxts-title">公路气象预报</dd>
+                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
+                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
+                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
+                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="shineichuxing">
+                    	<div class="snjt-title">
+                        	<dl>
+                            	<dd>出租车出行</dd>
+                                <dd class="dd-sel">公交出行</dd>
+                                <dd>地铁出行</dd>
+                            </dl>
+                        </div>
+                        <div class="snjt-body">
+                        	<img src="images/snjt-gc.png" class="img-gc"/>
+                            <div class="form-box">
+                            	<a href="" class="snjt-bnt"><img src="images/snjt-bnt.png"/></a>
+                                <div class="f-r">
+                                	<input name="qidian"/>
+                                    <p>起点</p>
+                                    <div class="clearfix" style="height:18px;"></div>
+                                    <input name="zhongdian"/>
+                                    <p>终点</p>
+                                </div>
+                                
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </div>
+                    <div id="gsgljtsj">
+                    	<div class="gsgljtsj-title">
+                        	<dl>
+                                <dd>其他</dd>
+                                <dd>交通事故</dd>
+                                <dd class="dd-sel">养护施工</dd>
+                            </dl>
+                        </div>
+                        <div class="gsgljtsj-body">
+                        	<dl>
+                            	<dd>
+                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                </dd>
+                                <dd>
+                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                </dd>
+                                <dd>
+                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                </dd>
+                                <dd>
+                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="bnt-box">
+                	<a href="#" class="bnt-ky f_l"></a>
+                    <a href="#" class="bnt-hb f_r"></a>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="ditu"><img src="images/ditu.png" width="663"/></div>
             </div>
             <div class="clearfix"></div>
         </div>
+        <div class="clearfix" style="height:15px;"></div>
+        
 	</div>
+    <div class="footer-a" style="margin-top:0px;">
+        <div class="m-container">
+            <p class="footer-p">本网站建议使用IE8及以上版本浏览器</p>
+            <p class="footer-p">本网站所发布的各类信息均为本网站版权所有，未经许可，禁止用于商业转载使用。 [ 网站声明 ][ 关于我们 ]</p>
+            <p class="footer-p">版权所有：深圳市交通运输委员会  技术支持：深圳市易行网交通科技有限公司， 交通部公路科学研究院</p>
+            <p class="footer-p">[CP备案编号：粤ICP备06021958号  审图号：GS(2010)1122号]</p>
+        </div>
+    </div>
 	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="./js/index.js"></script>
 </body>
