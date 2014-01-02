@@ -106,7 +106,7 @@ body{
 
 #cygp-box .cygp-label{
 	float:left;
-	width:80px;
+	width:115px;
 	height:21px;
 	line-height:21px;
 	text-align:right;
@@ -122,6 +122,10 @@ body{
 #cygp-box #hangkong{
 	margin-top:19px;
 	display:none;
+}
+
+#cygp-box #hangkong dl{
+	margin:0px 40px;
 }
 
 #cygp-box #tielu{
@@ -148,7 +152,7 @@ body{
 	height:23px;
 	line-height:23px;
 	float:right;
-	margin-right:58px;
+	margin-right:99px;
 	background:#e44343;
 	color:#fff;
 	font-weight:bold;
@@ -158,10 +162,11 @@ body{
 }
 
 #cygp-box #gonglu dl{
-	width:100%;
+	width:auto;
 	height:35px;
 	clear:both;
-	margin:0 auto;
+	margin:0px 40px;
+	
 }
 
 #cygp-box dl dd{
