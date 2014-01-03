@@ -70,6 +70,14 @@ body{
 	overflow-x :hidden;
 }
 
+a:link{
+	text-decoration:none;
+}
+
+a:hover{
+	color:#FF7539;
+}
+
 .clearfix{
 	width:0px;
 	height:0px;

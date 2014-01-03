@@ -15,6 +15,27 @@ HomePage.prototype = {
 			$("#cygp-box #" + data).show();
 			
 		});
+		
+		
+		$("#gslk-box .gslk-body .body-left dd").click(function(){
+			var data = $(this).attr("data");
+			$("#gslk-box .gslk-body .body-left dd").removeClass("dd-sel");
+			$(this).addClass("dd-sel");
+			$("#gslk-box .gslk-body .body-right").hide();
+			$("#gslk-box #gslk-" + data).show();
+			
+		});
+		
+		
+		$("#shineichuxing .snjt-title dl dd").click(function(){
+			$("#shineichuxing .snjt-title dl dd").removeClass("dd-sel");
+			$(this).addClass("dd-sel");
+		});
+		
+		$("#gsgljtsj .gsgljtsj-title dl dd").click(function(){
+			$("#gsgljtsj .gsgljtsj-title dl dd").removeClass("dd-sel");
+			$(this).addClass("dd-sel");
+		});
 	}
 };
 

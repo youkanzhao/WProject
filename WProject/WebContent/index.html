@@ -7,6 +7,8 @@
 <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 <body>
+	<div class="bianpao-left"></div>
+	<div class="bianpao-right"></div>
 	<div class="main index-container">
     	<div class="tq-box">
             <dl>
@@ -40,7 +42,7 @@
                             </li>
                             <li data="gangkou">
                             	<div class="tab-icon icon-gangkou"></div>
-                                <div class="tab-txt">港口</div>
+                                <div class="tab-txt">码头</div>
                             </li>
                         </ul>
                     </div>
@@ -79,8 +81,26 @@
                             <dd><a href="">航旅指南</a></dd>
                         </dl>
                     </div>
-                    <div id="tielu" class="cygp-box-content">铁路内容</div>
-                    <div id="gangkou" class="cygp-box-content">铁路内容</div>
+                    <div id="tielu" class="cygp-box-content">
+                    	<a href="#" class="tielu-bnt f-l">余票查询</a>
+                    	<a href="#" class="tielu-bnt f-l">时刻表</a>
+                    	<div class="clearfix" style="height:15px;"></div>
+                    	<a href="#" class="tielu-bnt f-l">车票预定</a>
+                    	<a href="#" class="tielu-bnt f-l">火车票代售点</a>
+                    </div>
+                    <div id="gangkou" class="cygp-box-content">
+                    	<div class="tips-cf f-l">从深圳出发</div>
+                    	<div class="text-daoda">到达深圳港</div>
+                    	<div class="clearfix" style="height:12px;"></div>
+                    	<div class="gk-label">到达城市</div>
+                    	<select class="gk-select">
+						  <option value="shenzhen" selected="true">深圳港</option>
+						  <option value="zhanjiang">湛江港</option>
+						  <option value="zhuhai">珠海港</option>
+						</select>
+						<a href="#" class="gk-bnt">查询</a>
+						<div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
             <div id="gslk-box">
@@ -91,53 +111,53 @@
                 <div class="gslk-body">
                 	<div class="body-left">
                     	<dl>
-                        	<dd class="b-t b-l b-b">全省<div class="arrow"></div></dd>
-                            <dd class="b-b b-l dd-sel">珠三角<div class="arrow"></div></dd>
-                            <dd class="b-b b-l">粤东<div class="arrow"></div></dd>
-                            <dd class="b-b b-l">粤西<div class="arrow"></div></dd>
-                            <dd class="b-b b-l">粤北<div class="arrow"></div></dd>
+                        	<dd class="b-t b-l b-b" data="quansheng">全省<div class="arrow"></div></dd>
+                            <dd class="b-b b-l dd-sel" data="zhusanjiao">珠三角<div class="arrow"></div></dd>
+                            <dd class="b-b b-l" data="yuedong">粤东<div class="arrow"></div></dd>
+                            <dd class="b-b b-l" data="yuexi">粤西<div class="arrow"></div></dd>
+                            <dd class="b-b b-l" data="yuebei">粤北<div class="arrow"></div></dd>
                         </dl>
                     </div>
-                    <div class="body-right">
+                    <div class="body-right" id="gslk-quansheng">
                     	<dl>
                         	<dd class="b-t">
                             	<div class="right-icon-id">G01009</div>
-                                <div class="right-txt f-l">广深高速</div>
+                                <div class="right-txt f-l">高速(全省)</div>
                                 <div class="right-icon-3"></div>
                                 <div class="right-icon-2"></div>
                                 <div class="right-icon-1"></div>
                             </dd>
                             <dd class="b-t">
                             	<div class="right-icon-id">G01009</div>
-                                <div class="right-txt f-l">北环高速</div>
+                                <div class="right-txt f-l">高速(全省)</div>
                                 <div class="right-icon-3"></div>
                                 <div class="right-icon-2"></div>
                                 <div class="right-icon-1"></div>
                             </dd>
                             <dd class="b-t">
                             	<div class="right-icon-id">G01009</div>
-                                <div class="right-txt f-l">广深高速</div>
+                                <div class="right-txt f-l">高速(全省)</div>
                                 <div class="right-icon-3"></div>
                                 <div class="right-icon-2"></div>
                                 <div class="right-icon-1"></div>
                             </dd>
                             <dd class="b-t">
                             	<div class="right-icon-id">G01009</div>
-                                <div class="right-txt f-l">北环高速</div>
+                                <div class="right-txt f-l">高速(全省)</div>
                                 <div class="right-icon-3"></div>
                                 <div class="right-icon-2"></div>
                                 <div class="right-icon-1"></div>
                             </dd>
                             <dd class="b-t">
                             	<div class="right-icon-id">G01009</div>
-                                <div class="right-txt f-l">广深高速</div>
+                                <div class="right-txt f-l">高速(全省)</div>
                                 <div class="right-icon-3"></div>
                                 <div class="right-icon-2"></div>
                                 <div class="right-icon-1"></div>
                             </dd>
                             <dd class="b-t">
                             	<div class="right-icon-id">G01009</div>
-                                <div class="right-txt f-l">北环高速</div>
+                                <div class="right-txt f-l">高速(全省)</div>
                                 <div class="right-icon-3"></div>
                                 <div class="right-icon-2"></div>
                                 <div class="right-icon-1"></div>
@@ -156,6 +176,244 @@
                             </li>
                         </ul>
                     </div>
+                    
+                    <div class="body-right" id="gslk-zhusanjiao" style="display:block;">
+                    	<dl>
+                        	<dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(珠三角)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(珠三角)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(珠三角)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(珠三角)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(珠三角)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(珠三角)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            
+                        </dl>
+                        <div class="clearfix"></div>
+                        <ul>
+                        	<li class="gsgg">
+                            	<div class="title">高速公共</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                            <li class="cybl">
+                            	<div class="title">车友爆料</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="body-right" id="gslk-yuedong">
+                    	<dl>
+                        	<dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤东)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤东)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤东)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤东)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤东)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤东)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            
+                        </dl>
+                        <div class="clearfix"></div>
+                        <ul>
+                        	<li class="gsgg">
+                            	<div class="title">高速公共</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                            <li class="cybl">
+                            	<div class="title">车友爆料</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="body-right" id="gslk-yuexi">
+                    	<dl>
+                        	<dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤西)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤西)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤西)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤西)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤西)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤西)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            
+                        </dl>
+                        <div class="clearfix"></div>
+                        <ul>
+                        	<li class="gsgg">
+                            	<div class="title">高速公共</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                            <li class="cybl">
+                            	<div class="title">车友爆料</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="body-right" id="gslk-yuebei">
+                    	<dl>
+                        	<dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤北)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤北)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤北)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤北)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤北)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            <dd class="b-t">
+                            	<div class="right-icon-id">G01009</div>
+                                <div class="right-txt f-l">高速(粤北)</div>
+                                <div class="right-icon-3"></div>
+                                <div class="right-icon-2"></div>
+                                <div class="right-icon-1"></div>
+                            </dd>
+                            
+                        </dl>
+                        <div class="clearfix"></div>
+                        <ul>
+                        	<li class="gsgg">
+                            	<div class="title">高速公共</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                            <li class="cybl">
+                            	<div class="title">车友爆料</div>
+                                <div class="info">S49新台高速往佛开高速方向K16...<a href="">more</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -302,7 +560,7 @@
                         <dd>星期三  上午：10时45分</dd>
                         <dd>全路网交通指数：1.3 基本畅通</dd>
                         <dd>平均速度：34.5公里/小时</dd>
-                        <dd class="detail">详细信息</dd>
+                        <dd class="detail"><a href="">详细信息</a></dd>
                     </dl>
                 </div>
             </div>
@@ -514,19 +772,19 @@
                             </div>
                             <div class="clearfix"></div>
                             <dl>
-                            	<dd>国内燃油附加费涨10元</dd>
+                            	<dd><a href="">国内燃油附加费涨10元</a></dd>
                                 <dd style="text-align:right;">[2013-03-05]</dd>
                             </dl>
                             <dl>
-                            	<dd>国内燃油附加费涨10元</dd>
+                            	<dd><a href="">国内燃油附加费涨10元</a></dd>
                                 <dd style="text-align:right;">[2013-03-05]</dd>
                             </dl>
                             <dl>
-                            	<dd>国内燃油附加费涨10元</dd>
+                            	<dd><a href="">国内燃油附加费涨10元</a></dd>
                                 <dd style="text-align:right;">[2013-03-05]</dd>
                             </dl>
                             <dl>
-                            	<dd>国内燃油附加费涨10元</dd>
+                            	<dd><a href="">国内燃油附加费涨10元</a></dd>
                                 <dd style="text-align:right;">[2013-03-05]</dd>
                             </dl>
                             <div class="clearfix"></div>
@@ -536,19 +794,19 @@
                     	<div id="jrcxts">
                         	<dl>
                             	<dd class="jrcxts-title">今日出行提示</dd>
-                                <dd>3月5日出行提示</dd>
-                                <dd>3月6日出行提示</dd>
-                                <dd>3月7日出行提示</dd>
-                                <dd class="jrcxts-more">MORE >></dd>
+                                <dd><a href="">3月5日出行提示</a></dd>
+                                <dd><a href="">3月6日出行提示</a></dd>
+                                <dd><a href="">3月7日出行提示</a></dd>
+                                <dd class="jrcxts-more"><a href="">MORE >></a></dd>
                             </dl>
                         </div>
                         <div id="glqxyb">
                         	<dl>
                             	<dd class="jrcxts-title">公路气象预报</dd>
-                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
-                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
-                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
-                                <dd>2013年12月08日公路交通气象雨夹雪</dd>
+                                <dd><a href="">2013年12月08日公路交通气象雨夹雪</a></dd>
+                                <dd><a href="">2013年12月08日公路交通气象雨夹雪</a></dd>
+                                <dd><a href="">2013年12月08日公路交通气象雨夹雪</a></dd>
+                                <dd><a href="">2013年12月08日公路交通气象雨夹雪</a></dd>
                             </dl>
                         </div>
                     </div>
@@ -589,16 +847,16 @@
                         <div class="gsgljtsj-body">
                         	<dl>
                             	<dd>
-                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                	<div class="arrow"></div><a href="">阳茂高速，马踏至新圩段畅通</a><span>[2013-11-12 12:09:22]</span>
                                 </dd>
                                 <dd>
-                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                	<div class="arrow"></div><a href="">阳茂高速，马踏至新圩段畅通</a><span>[2013-11-12 12:09:22]</span>
                                 </dd>
                                 <dd>
-                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                	<div class="arrow"></div><a href="">阳茂高速，马踏至新圩段畅通</a><span>[2013-11-12 12:09:22]</span>
                                 </dd>
                                 <dd>
-                                	<div class="arrow"></div>阳茂高速，马踏至新圩段畅通<span>[2013-11-12 12:09:22]</span>
+                                	<div class="arrow"></div><a href="">阳茂高速，马踏至新圩段畅通</a><span>[2013-11-12 12:09:22]</span>
                                 </dd>
                             </dl>
                         </div>
